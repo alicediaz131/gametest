@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name = "viewport" content="width=device-width, initial-size=1.0" />
+        <meta name="description" content="Example of a web page for webjam" />
+        <title>Webjam Example Page</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./script.js"></script>
+    </head>
+
+    <body>
+    <h1 class="GameTitle">Dress to Impress for Anteaters</h1>
+    <div class="rowFrame">
+        <div class = "anteaterContainer" id="outfit" style = "background: url('pictures/anteaterBase.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+        </div>
+    <div class="navbar">
+    
+	<div class="dropdown">
+            <button class="dropbutton" onclick="clicked('mydropdown1')">Tops</button>
+            <div class = "dropdown-content" id="mydropdown1">
+                <a href="#" onclick="topOneClicked()">
+                    <img class = "topimg" src ="pictures/top1.png" alt = "A green shirt with a beige vest">
+                </a>
+                <a href="#" onclick="topTwoClicked()">
+                    <img class = "topimg" src ="pictures/top2.png" alt = "A blue UCI sweater with gold text">
+                </a>
+                <a href="#" onclick="topThreeClicked()">
+                    <img class = "topimg" src ="pictures/top3.png" alt = "A black shirt with heart designs">
+                </a>
+            </div>
+    </div>
+
+	<div class="dropdown">
+            <button class="dropbutton" onclick="clicked('mydropdown2')">Bottoms</button>
+            <div class = "dropdown-content" id="mydropdown2">
+                <a href="#" onclick="bottomOneClicked()">
+                    <img class="bottomimg" src ="pictures/bottom1.png" alt = "A black skirt">
+                </a>
+                <a href="#" onclick="bottomTwoClicked()">
+                    <img class="bottomimg" src ="pictures/bottom2.png" alt = "Brown Khaki shorts">
+                </a>
+                <a href="#" onclick="bottomThreeClicked()">
+                    <img class="bottomimg" src ="pictures/bottom3.png" alt = "Green shorts">
+                </a>
+            </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbutton" onclick="clicked('mydropdown3')">Shoes</button>
+        <div class = "dropdown-content" id="mydropdown3">
+            <a href="#" onclick="shoesOneClicked()">
+                <img class="shoeimg" src ="pictures/shoes1.png" alt = "Brown shoes">
+            </a>
+            <a href="#" onclick="shoesTwoClicked()">
+                <img class="shoeimg" src ="pictures/shoes2.png" alt = "Black shoes">
+            </a>
+            <a href="#" onclick="shoesThreeClicked()">
+                <img class="shoeimg" src ="pictures/shoes3.png" alt = "Red shoes">
+            </a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbutton" onclick="clicked('mydropdown4')">Background</button>
+        <div class = "dropdown-content" id="mydropdown4">
+            <a href="#" onclick="backgroundOneClicked()">
+                <img class="backgroundimg" src ="pictures/campfire.jpeg" alt = "A picture of a campfire">
+            </a>
+            <a href="#" onclick="backgroundTwoClicked()">
+                <img class="backgroundimg" src ="pictures/campsite.jpg" alt = "A picture of a campfire in daytime">
+            </a>
+            <a id="defaultbg" href="#" onclick="backgroundThreeClicked()">Default
+            </a>
+        </div>
+    </div>
+        
+    </div>
+    </div>
+    </body>
+
+</html>
